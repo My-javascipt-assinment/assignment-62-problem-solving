@@ -1,187 +1,320 @@
 /*==================================== Question No 1 =========================================
+call() 
+we create a normal function and pass agruments and receive in its parmaeter and use it. 
+in call() we make an object and save object in varaible and write some properities and 
 
+vales inside object 
+now when we call out function after funciton name we write call() and inside call paramete 
+firts we write the name of object and after writing object name we pass our another arguments and 
+the properities of object we use in our funciton by this.property . it is used in oop not in 
+funcitonal programming but for interview is necessary its concept
+======================================= Answer =====================================*/
+//  function greeting(name,age){
+//   console.log(`My name is ${name}, and i am ${age} years old and my city is ${this.city}`)
+// }
+
+// const place = {
+//   city: 'Karachi'
+// }
+
+// greeting.call(place,'Aziz',30)
+       
+// function greeting(name,age)
+// {
+//     console.log(`My name is ${name} and my age is ${age} years and 
+//         my city is ${this.city}`)
+// }
+
+// const place = {
+//     city : 'Karachi'
+// }
+// greeting.call(place,'Aziz',20)
+
+
+// example 2
+// function info(name,designation){
+//     console.log(`My name is ${name} and i am ${designation}, My city is ${this.city} and my province is ${this.province} `)
+
+// }
+// const details = {
+//     city : 'Karachi',
+//     province : 'Punjab'
+// }
+
+// info.call(details,'Aziz','developer')
+
+/*==================================== Question No 2 =========================================
+apply() 
+call and apply are same only having one main difference 
+in call parameter first we pass object name and after the name of our another argument by comma but 
+in apply() first we pass object name and after passing object name we write , and another agrguments 
+we pass inside an array [] , this is only one difference b/w call and apply
+======================================= Answer =====================================*/
+// function info(name,age){
+//     console.log(`My name is ${name},my age is ${age} and my city is ${this.city} 
+//         and my province is ${this.province}`)
+
+// }
+
+// const obj = {
+//     city :'Karachi',
+//     province : 'pb'
+// }
+// info.apply(obj,['Aziz',30])
+/*==================================== Question No 3 =========================================
+bind is also like call but when we call bind it does not reply us we have to save it first in 
+a varialbe and than we can get reply and in bind paramter we pass first object name and than pass 
+another agruments  by comma not in an arry like apply
+
+call() 
+we pass 1st object name and after we pass another argumetns by comma 
+apply()
+we pass 1st object name and than , and inside an array we pass another agruments 
+bind()
+we pass first object name and than we pass another arguments by comma not in an array 
+and to get response of bind first we have to stroe bind in a varible and than we call variable like ans() and than 
+we can get the answer of bind.
+======================================= Answer =====================================*/
+// function info(name,age){
+//     console.log(`My name is ${name} and my age is ${age}, my city is ${this.city} and 
+//         my province is ${this.province}`)
+// }
+// const obj = {
+//     city : 'kci',
+//     province : 'Punjab'
+// }
+
+// let ans = info.bind(obj,'Aziz',30);
+// ans()
+/*==================================== Question No 4 =========================================
+date topic 
+we use new keyword in date because Date() type is string and we can not get out values of string 
+until we convert string to an object , to get values like hours, minutes, months we use new keyword 
+before Date() and date type converts string to object 
+======================================= Answer =====================================*/
+// var date = new Date();
+// console.log(date,typeof date)
+// console.log(date.getFullYear())
+// console.log(date.getMonth())
+// console.log(date.getDay())
+// console.log(date.getHours())
+// console.log(date.getMinutes())
+// console.log(date.getSeconds())
+// console.log(date.getMilliseconds())
+// console.log(date.toDateString())
+// console.log(date.toTimeString())
+// console.log(date.toLocaleDateString())
+// const birthDay = new Date('08 july 1997');
+// console.log(birthDay)
+
+// var date = new Date();
+// date.setMonth(6)
+// console.log(date)
+// date.setFullYear(1900);
+// console.log(date)
+// date.setDate(30)
+// console.log(date)
+// date.setFullYear(8)
+// console.log(date)
+// date.setMinutes(10)
+// console.log(date)
+/*==================================== Question No 5 =========================================
+string : 
+any thing that is written inside '' is called string like 'stri23', 'aziz' etc
+======================================= Answer =====================================*/
+// var name = 'Aziz'
+// var age = '23years'
+// any thing that we see written inside quotation marks is called string
+/*==================================== Question No 6 =========================================
+Numbers 
+the number that we use in Mathematics like 23,4,55,6,6 are called numbears numbers are not written inside ''
 ======================================= Answer =====================================*/
 
+// let number = 342525
+// let num = 23
 
 
 
+/*==================================== Question No 7 =========================================
+data : 
+information related to a person or thing is called data , data is information about person or thing 
+we store data in varibale and object 
+======================================= Answer =====================================*/
+// let name = 'Aziz',
+// name is also a data it shows name information
 
-/*==================================== Question No 1 =========================================
 
+/*==================================== Question No 8 =========================================
+variale 
+a variable is like a constainer and it is used  to store data or infomation, like glass is a container and water 
+we put inside it is data or infomation 
+variable are containers that are used to store data or information
+======================================= Answer =====================================*/
+// let name = 'Aziz';
+// let age  = 23;
+
+/*==================================== Question No 9 =========================================
+var 
+var is a reserved keyword of js that is used to create variables, let and const are also keywords 
+that are used to creating varibles. we can not write var capitalized ,var ,let and const are always written in lowerCase
+======================================= Answer =====================================*/
+// var name = 'Aziz';
+// let name = 'Aziz';
+// const name = 'Aziz';
+
+
+/*==================================== Question No 10 =========================================
+overwriting of varialbe
+======================================= Answer =====================================*/
+// var name = 'Aziz';
+// name = 'Umair';
+// name = 'Pervaiz'
+// let name = 'Aziz';
+// name = 'Pervaiz';
+// const age = 30;
+// age = 31
+// console.log(age)
+
+
+/*==================================== Question No 11 =========================================
+difference b/w varialbe and string 
+we can not write the name of variable inside '' and we can not write string with out ''
+======================================= Answer =====================================*/
+// let 'name' = 'Aziz'
+// let name = Aziz
+
+/*==================================== Question No 12 =========================================
+alert()
 ======================================= Answer =====================================*/
 
+// let name = 'Aziz';
+// alert(name)
+// alert('what are you doing')
+
+
+
+/*==================================== Question No 13 =========================================
+concatenation
+======================================= Answer =====================================*/
+// let number1= 22;
+// let number2 = '3';
+// let ans = number1 + number2;
+// console.log(ans)
 
 
 
 
-/*==================================== Question No 1 =========================================
+/*==================================== Question No 14 =========================================
+check data type 
+======================================= Answer =====================================*/
+// let name = 'Aziz';
+// console.log(typeof name);
+// console.log(typeof 3233)
+
+/*==================================== Question No 15 =========================================
+javascript percedence rule 
+if we have to do +,/,* and - than first we complete * from left to right,than we do / from  than do + and last - , all
+operation we do from left to right ,
+familiar operator in js 
+multiplication , addition , subtration and division is called js familiar operators 
+======================================= Answer =====================================*/
+//  var result = 10 + 2 * 3 - 4 / 2;
+//  result = 10 + 6 - 2
+//  result = 16-2
+//  result = 14
+//  console.log(eval(10+2*3-4/2))
+
+/*==================================== Question No 16 =========================================
+Eliminity Ambiguity 
+when we are doing mathematical operation in js  and we are confusing that what should we do 
+first multiply,/,- or + than we use Eliminity Ambiguity rule 
+that is following and it removes our confusion
+======================================= Answer =====================================*/
+// let add = 3 + 2 * 8-3 /4
+
+//  add = (3+2)*(8-3)/(4)
+// add = (5)*(5)/(4)
+// add = 25/4
+// console.log(eval((5)*(5)/(4)))
+
+/*==================================== Question No 17 =========================================
+Escape sequence character 
+in html we use <br> tag for line break but in js we \n for line break , \n is escape sequence character in js
+======================================= Answer =====================================*/
+// console.log('my name is \n Aziz')
+
+/*==================================== Question No 18 =========================================
++ concatenation of string 
++ familiar operator is used for the concatenation of string in js
 
 ======================================= Answer =====================================*/
+// let firstName = 'Muhammad';
+// let lastName = 'Ali';
+// let fullName = firstName +' '+ lastName;
+// console.log(fullName)
 
+// let numOne = 5;
+// let numTwo = '3'
+// console.log(numOne + numTwo)
 
-
-
-/*==================================== Question No 1 =========================================
-
+/*==================================== Question No 19 =========================================
+== and === 
+== compares only values but === compares values and data types also
 ======================================= Answer =====================================*/
+// console.log( 2 === '2')
+// console.log(5 == '5')
+// console.log(4 !== '4')
 
 
-
-
-
-
-/*==================================== Question No 1 =========================================
-
+/*==================================== Question No 20 =========================================
+&& and  ||
 ======================================= Answer =====================================*/
+// let name = prompt('Enter name');
+// let age = prompt('enter age')
+// if(name === 'A' && age === '20'){
+//     console.log('eligible')
+// }
+// else{
+//     console.log('not eligible')
+// }
 
 
+// let name = prompt('Enter name');
+// let age = prompt('enter age')
+// if(name === 'A' || age === '20'){
+//     console.log('eligible')
+// }
+// else{
+//     console.log('not eligible')
+// }
 
 
-
-
-
-/*==================================== Question No 1 =========================================
-
+/*==================================== Question No 21 =========================================
+if/nested if
 ======================================= Answer =====================================*/
+// let age = prompt('enter your age')
+// if(age <20){
+//     let education = prompt('enter education')
+//     if(education > 10){
+//     console.log('you are selected')
 
+//     }
+//     else{
+//         console.log('you have low education')
+//     }
 
+// }
+// else{
+//     console.log('you age overage')
+// }
 
-
-
-/*==================================== Question No 1 =========================================
-
+/*==================================== Question No 22 =========================================
+array is a like a variable and we can save multiple data types in an array
 ======================================= Answer =====================================*/
-
-
-
-
-
-/*==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
-
-
-
-
-
-/*==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
-
-
-
-/*==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
-
-
-
-
-
-/*==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
-
-
-
-
-
-/*==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
-
-
-
-
-
-/*==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
-
-
-
-
-
-/*==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
-
-
-
-
-
-
-/*==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
-
-
-
-
-
-
-
-/*==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
-
-
-
-
-
-
-/*==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
-
-
-
-
-
-
-
-/*==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
-
-
-
-
-
-/*==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
-
-
-
-
-
-/*==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
-
-
-
-
-
-/*==================================== Question No 1 =========================================
-https://themewagon.com/themes/free-bootstrap-4-html5-web-developer-portfolio-website-template-satner/
-======================================= Answer =====================================*/
-
-
-
-/*==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
-
-
-
-
-
-/*==================================== Question No 1 =========================================
-
-======================================= Answer =====================================*/
-
+let names = ['Aziz','Muneeb','','Rameez'];
+console.log(names,typeof names);
+console.log(names.length)
+console.log(names[11])
 
 
 

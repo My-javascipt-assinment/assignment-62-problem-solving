@@ -892,18 +892,18 @@ unique array
 reverse string 
 and palindrome
 ======================================= Answer =====================================*/
-// let str = prompt('enter str')
-// let reversed = '';
-// for(let i = str.length - 1;i >= 0;i--){
-//     // console.log(str[i])
-//     reversed = reversed + str[i]
-// }
+let str = prompt('enter str')
+let reversed = '';
+for(let i = str.length - 1;i >= 0;i--){
+    // console.log(str[i])
+    reversed = reversed + str[i]
+}
 
-// console.log(reversed)
-// if(str === reversed){
-//     console.log('palindrome')
-// }
-// else{console.log('not palindrom')}
+console.log(reversed)
+if(str === reversed){
+    console.log('palindrome')
+}
+else{console.log('not palindrom')}
 /*==================================== Question No 58 =========================================
 find large number by for loop
 ======================================= Answer =====================================*/
@@ -943,7 +943,7 @@ small number finding by array
 
 
 /*==================================== Question No 60 =========================================
-
+factorial
 ======================================= Answer =====================================*/
 // function processing(){let getNum = document.getElementById('input').value;
 //     let display = document.getElementById('display');
